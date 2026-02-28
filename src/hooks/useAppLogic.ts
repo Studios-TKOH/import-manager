@@ -1,10 +1,10 @@
 import { useState, useMemo } from 'react';
 import { Home, ShoppingCart, Package, Users, Settings, Mail, TrendingUp } from 'lucide-react';
 import { NavItem, Transaccion } from '../types';
-
-// Importamos la data simulada (Más adelante esto se leerá con Tauri FS)
 import ventasData from '../data/ventas.json';
 import comprasData from '../data/compras.json';
+import inventarioData from '../data/inventario.json';
+import correosData from '../data/correos.json';
 
 export const useAppLogic = () => {
     const [activeTab, setActiveTab] = useState('dashboard');
@@ -48,6 +48,9 @@ export const useAppLogic = () => {
             .reduce((acc, curr) => acc + curr.total, 0);
     }, [transacciones]);
 
+    const totalProductos = inventarioData.length.toString();
+    const correosProcesados = correosData.filter(c => c.procesado).length.toString();
+
     const ultimasTransacciones = transacciones.slice(0, 5);
 
     const formatSoles = (monto: number) => {
@@ -61,6 +64,8 @@ export const useAppLogic = () => {
         ultimasTransacciones,
         totalVentas: formatSoles(totalVentas),
         totalCompras: formatSoles(totalCompras),
+        totalProductos,
+        correosProcesados,
         formatSoles
     };
 };
