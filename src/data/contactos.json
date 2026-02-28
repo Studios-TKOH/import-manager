@@ -1,0 +1,14 @@
+[
+    {
+        "id": "ct-1",
+        "nombre": "RICOH DEL PERU S.A.C.",
+        "tipo": "Cliente",
+        "ruc": "20100486301"
+    },
+    {
+        "id": "ct-2",
+        "nombre": "SODIMAC",
+        "tipo": "Proveedor",
+        "ruc": "20388853752"
+    }
+]

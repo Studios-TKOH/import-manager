@@ -1,0 +1,16 @@
+[
+    {
+        "id": "mail-1",
+        "fecha": "2025-01-07",
+        "asunto": "Nueva Factura 438 Emitida",
+        "remitente": "ventas@sistema.com",
+        "procesado": true
+    },
+    {
+        "id": "mail-2",
+        "fecha": "2025-01-08",
+        "asunto": "Confirmación Orden de Compra",
+        "remitente": "proveedores@sodimac.com",
+        "procesado": true
+    }
+]

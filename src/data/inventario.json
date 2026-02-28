@@ -1,0 +1,16 @@
+[
+    {
+        "id": "p-1",
+        "codigo": "PROD-001",
+        "descripcion": "PAPEL TOALLA INTERFOLEADO SUPREMO (CAJA X 4000 HOJAS)",
+        "stock": 150,
+        "precio": 149.00
+    },
+    {
+        "id": "p-2",
+        "codigo": "PROD-002",
+        "descripcion": "SILICONA EN BARRA BOLSA X 800GR.",
+        "stock": 85,
+        "precio": 22.00
+    }
+]
