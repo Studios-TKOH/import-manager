@@ -12,7 +12,14 @@ import { TableRow } from "./components/TableRow";
 import "./styles/App.css";
 
 export default function App() {
-  const { activeTab, setActiveTab, navItems } = useAppLogic();
+  const {
+    activeTab,
+    setActiveTab,
+    navItems,
+    ultimasTransacciones,
+    totalVentas,
+    totalCompras,
+  } = useAppLogic();
 
   return (
     <div className="layout-container">
@@ -87,29 +94,30 @@ export default function App() {
             <div className="space-y-6">
               <div className="card-grid">
                 <StatCard
-                  title="Ventas del Mes"
-                  value="$24,500.00"
+                  title="Total Ventas (Soles)"
+                  value={totalVentas}
                   icon={TrendingUp}
                   color="text-emerald-600"
                   bg="bg-emerald-100"
                 />
                 <StatCard
-                  title="Compras del Mes"
-                  value="$12,340.00"
+                  title="Total Compras (Soles)"
+                  value={totalCompras}
                   icon={ShoppingCart}
                   color="text-rose-600"
                   bg="bg-rose-100"
                 />
+                {/* Estas 2 quedan fijos de momento */}
                 <StatCard
                   title="Correos Procesados"
-                  value="142"
+                  value="0"
                   icon={Mail}
                   color="text-blue-600"
                   bg="bg-blue-100"
                 />
                 <StatCard
                   title="Productos Activos"
-                  value="8,405"
+                  value="0"
                   icon={Package}
                   color="text-amber-600"
                   bg="bg-amber-100"
@@ -138,27 +146,12 @@ export default function App() {
                       </tr>
                     </thead>
                     <tbody className="text-sm">
-                      <TableRow
-                        fecha="2025-12-15"
-                        doc="1571"
-                        entidad="SAN FERNANDO S.A."
-                        tipo="Venta"
-                        monto="S/. 3,766.00"
-                      />
-                      <TableRow
-                        fecha="2025-01-07"
-                        doc="438"
-                        entidad="RICOH DEL PERU S.A.C."
-                        tipo="Venta"
-                        monto="S/. 447.00"
-                      />
-                      <TableRow
-                        fecha="2022-12-18"
-                        doc="COMPRA"
-                        entidad="SODIMAC"
-                        tipo="Compra"
-                        monto="S/. 478.40"
-                      />
+                      {ultimasTransacciones.map((transaccion) => (
+                        <TableRow
+                          key={transaccion.id}
+                          transaccion={transaccion}
+                        />
+                      ))}
                     </tbody>
                   </table>
                 </div>

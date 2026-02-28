@@ -1,0 +1,26 @@
+[
+    {
+        "id": "v-1001",
+        "fecha": "2025-01-07",
+        "documento": "438",
+        "cliente": "RICOH DEL PERU S.A.C.",
+        "producto": "PAPEL TOALLA INTERFOLEADO SUPREMO (CAJA X 4000 HOJAS)",
+        "precio_unitario": 149.00,
+        "moneda": "SOLES",
+        "cantidad": 3,
+        "unidad": "Caja",
+        "total": 447.00
+    },
+    {
+        "id": "v-1002",
+        "fecha": "2024-01-05",
+        "documento": "329",
+        "cliente": "RIMAC SEGUROS Y REASEGUROS",
+        "producto": "CINTA DOBLE CONTACTO 3/4 X 33MT.",
+        "precio_unitario": 210.00,
+        "moneda": "SOLES",
+        "cantidad": 1,
+        "unidad": "PZ.",
+        "total": 210.00
+    }
+]

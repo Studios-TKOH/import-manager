@@ -1,0 +1,26 @@
+[
+    {
+        "id": "c-1001",
+        "fecha": "2022-12-19",
+        "documento": "S/D",
+        "proveedor": "SODIMAC",
+        "producto": "Tierra de chacra (bolsa x 30 kg.)",
+        "precio_unitario": 8.50,
+        "moneda": "SOLES",
+        "cantidad": 2,
+        "unidad": "bolsa",
+        "total": 17.00
+    },
+    {
+        "id": "c-1002",
+        "fecha": "2022-01-21",
+        "documento": "S/D",
+        "proveedor": "TERRAPLASTIC",
+        "producto": "Papelera Cosmos Metales Amarllo Rey",
+        "precio_unitario": 57.00,
+        "moneda": "SOLES",
+        "cantidad": 1,
+        "unidad": "Pz.",
+        "total": 57.00
+    }
+]
