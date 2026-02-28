@@ -31,3 +31,26 @@ export interface Transaccion {
 export interface TableRowProps {
     transaccion: Transaccion;
 }
+
+export interface Producto {
+    id: string;
+    codigo: string;
+    descripcion: string;
+    stock: number;
+    precio: number;
+}
+
+export interface Contacto {
+    id: string;
+    nombre: string;
+    tipo: 'Cliente' | 'Proveedor';
+    ruc: string;
+}
+
+export interface Correo {
+    id: string;
+    fecha: string;
+    asunto: string;
+    remitente: string;
+    procesado: boolean;
+}
