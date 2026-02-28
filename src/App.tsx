@@ -8,6 +8,7 @@ import { VentasView } from "./views/SalesView";
 import { ComprasView } from "./views/PurchasesView";
 import { ContactosView } from "./views/ContactsView";
 import { AutomatizacionView } from "./views/AutomationView";
+import { ConfiguracionView } from "./views/SettingsView";
 import "./styles/App.css";
 
 export default function App() {
@@ -122,6 +123,8 @@ export default function App() {
         return <ContactosView />;
       case "automatizacion":
         return <AutomatizacionView />;
+      case "configuracion":
+        return <ConfiguracionView />
       default:
         return renderPlaceholder(activeTab);
     }
