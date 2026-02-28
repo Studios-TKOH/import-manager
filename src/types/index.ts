@@ -14,10 +14,20 @@ export interface StatCardProps {
     bg: string;
 }
 
-export interface TableRowProps {
+export interface Transaccion {
+    id: string;
     fecha: string;
-    doc: string;
+    documento: string;
     entidad: string;
-    tipo: string;
-    monto: string;
+    producto: string;
+    precio_unitario: number;
+    moneda: string;
+    cantidad: number;
+    unidad: string;
+    total: number;
+    tipo: 'Venta' | 'Compra';
+}
+
+export interface TableRowProps {
+    transaccion: Transaccion;
 }
