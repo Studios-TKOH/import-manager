@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Settings, Save, Database, Mail, User } from "lucide-react";
+import { Settings, Save, Mail, User } from "lucide-react";
 
 export function ConfiguracionView() {
     const [formData, setFormData] = useState({
